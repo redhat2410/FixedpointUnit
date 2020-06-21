@@ -1,26 +1,4 @@
 v 4
-file / "/home/ducvu/Desktop/fixed_point/src/Core.vhd" "9ea595c6015280c4e05ee8002dec09b7ef3edc44" "20200621130619.593":
-  entity core at 1( 0) + 0 on 1105;
-  architecture behavior of core at 17( 373) + 0 on 1106;
-file / "/home/ducvu/Desktop/fixed_point/src/Queue.vhd" "5520cd67c7de4a494353a4675400c0b8f109f9a7" "20200621130619.455":
-  entity queue at 1( 0) + 0 on 1097;
-  architecture behavior of queue at 21( 502) + 0 on 1098;
-file / "/home/ducvu/Desktop/fixed_point/src/fixedPt.vhd" "b418eaf2fa74602cae592dea3bb5ffd74f7c2bbc" "20200621130619.330":
-  package fixedpt at 1( 0) + 0 on 1082;
-  entity fpp_add at 45( 1274) + 0 on 1083;
-  architecture behavior of fpp_add at 58( 1577) + 0 on 1084;
-  entity fpp_sub at 67( 1859) + 0 on 1085;
-  architecture behavior of fpp_sub at 80( 2162) + 0 on 1086;
-  entity fpp_mul at 89( 2450) + 0 on 1087;
-  architecture behavior of fpp_mul at 103( 2792) + 0 on 1088;
-  entity fpp_div at 114( 3212) + 0 on 1089;
-  architecture behavior of fpp_div at 128( 3554) + 0 on 1090;
-file / "/home/ducvu/Desktop/fixed_point/src/FPU.vhd" "07660a2ee5efb56e2186f2fa7c90afefa80bb96b" "20200621130619.389":
-  entity fpu at 5( 162) + 0 on 1093;
-  architecture behavior of fpu at 18( 450) + 0 on 1094;
-file / "/home/ducvu/Desktop/fixed_point/src/D_FF.vhd" "e961e9dfcf5b113945a219e374d78598196f756c" "20200621130619.520":
-  entity d_ff at 1( 0) + 0 on 1101;
-  architecture behavior of d_ff at 13( 247) + 0 on 1102;
 file / "/home/ducvu/Desktop/fixed_point/testbench/tb_D_FF.vhd" "6f1c05c86ab3ce0823654e0b7ff39936be1aa24a" "20200621011943.585":
   entity tb_d_ff at 1( 0) + 0 on 655;
   architecture behavior of tb_d_ff at 7( 76) + 0 on 656;
@@ -30,3 +8,28 @@ file / "/home/ducvu/Desktop/fixed_point/testbench/tb_Core.vhd" "879795e852348976
 file / "/home/ducvu/Desktop/fixed_point/testbench/tb_FPU.vhd" "00df3acb4ed90178745be5f27ceaa857b979706e" "20200621082037.831":
   entity tb_fpu at 1( 0) + 0 on 1071;
   architecture behavior of tb_fpu at 8( 100) + 0 on 1072;
+file / "/home/ducvu/Desktop/FixedpointUnit/src/fixedPt.vhd" "b418eaf2fa74602cae592dea3bb5ffd74f7c2bbc" "20200621133454.001":
+  package fixedpt at 1( 0) + 0 on 1154;
+  entity fpp_add at 45( 1274) + 0 on 1155;
+  architecture behavior of fpp_add at 58( 1577) + 0 on 1156;
+  entity fpp_sub at 67( 1859) + 0 on 1157;
+  architecture behavior of fpp_sub at 80( 2162) + 0 on 1158;
+  entity fpp_mul at 89( 2450) + 0 on 1159;
+  architecture behavior of fpp_mul at 103( 2792) + 0 on 1160;
+  entity fpp_div at 114( 3212) + 0 on 1161;
+  architecture behavior of fpp_div at 128( 3554) + 0 on 1162;
+file / "/home/ducvu/Desktop/FixedpointUnit/src/FPU.vhd" "07660a2ee5efb56e2186f2fa7c90afefa80bb96b" "20200621133454.062":
+  entity fpu at 5( 162) + 0 on 1165;
+  architecture behavior of fpu at 18( 450) + 0 on 1166;
+file / "/home/ducvu/Desktop/FixedpointUnit/src/Queue.vhd" "5520cd67c7de4a494353a4675400c0b8f109f9a7" "20200621133454.117":
+  entity queue at 1( 0) + 0 on 1169;
+  architecture behavior of queue at 21( 502) + 0 on 1170;
+file / "/home/ducvu/Desktop/FixedpointUnit/src/D_FF.vhd" "e961e9dfcf5b113945a219e374d78598196f756c" "20200621133454.206":
+  entity d_ff at 1( 0) + 0 on 1177;
+  architecture behavior of d_ff at 13( 247) + 0 on 1178;
+file / "/home/ducvu/Desktop/FixedpointUnit/src/Core.vhd" "9ea595c6015280c4e05ee8002dec09b7ef3edc44" "20200621133454.262":
+  entity core at 1( 0) + 0 on 1181;
+  architecture behavior of core at 17( 373) + 0 on 1182;
+file / "/home/ducvu/Desktop/FixedpointUnit/src/Core_2.vhd" "3a80b0784f8d32ee3e8c26e597c21ed9a4f6cc33" "20200621133454.304":
+  entity core_2 at 1( 0) + 0 on 1185;
+  architecture behavior of core_2 at 15( 392) + 0 on 1186;
