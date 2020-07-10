@@ -37,6 +37,7 @@ package fixedPt is
             A   :   in std_logic_vector(31 downto 0);
             B   :   in std_logic_vector(31 downto 0);
             sel :   in std_logic;
+            clk :   in std_logic;
             result  :   out std_logic_vector(63 downto 0)
         );
     end component;
@@ -120,6 +121,7 @@ entity FPP_DIV is
     port(
         A   :   in std_logic_vector(31 downto 0);
         B   :   in std_logic_vector(31 downto 0);
+        clk :   in std_logic;
         sel :   in std_logic;
         result  :   out std_logic_vector(31 downto 0)
     );
@@ -130,12 +132,5 @@ signal t_A : std_logic_vector(63 downto 0);
 signal t_B : std_logic_vector(63 downto 0);
 signal t_div, t_result : std_logic_vector(63 downto 0);
 begin
-    t_A <= "0000" & A & X"0000000" when (sel = '0') else 
-        (others => 'Z');
-    t_B <= X"00000000" & B when (sel = '0') else 
-        (others => 'Z');
-    t_div <= std_logic_vector( unsigned(t_A) / unsigned(t_B) ) when (sel = '0') else
-        (others=>'Z');
-    result <= t_div(31 downto 0) when (sel = '0') else
-        (others => 'Z');
+    
 end behavior;
